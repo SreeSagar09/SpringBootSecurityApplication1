@@ -1,0 +1,13 @@
+A Program to show how to configure spring security with WebSecurityConfigurerAdapter class and with in memory authentication:
+Programs:
+* SpringBootSecurityApplication1Application.java
+* SecurityConfiguration.java
+* LoginController.java
+Notes:
+* The WebSecurityConfigurerAdapter is a abstract class, and this is a convenient class to configure spring security.
+* The WebSecurityConfigurerAdapter is the one of implementation class of WebSecurityConfigurer interface.
+* The WebSecurityConfigurerAdapter has been deprecated in Spring Security 5.7 version.
+* The configure(HttpSecurity http) override method is used to configure the HttpSecurity.
+* The configure(AuthenticationManagerBuilder auth) override method is used to configure the AuthenticationManagerBuilder.
+Output:
+From main method in SpringBootSecurityApplication1Application class.
