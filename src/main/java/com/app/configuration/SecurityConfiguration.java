@@ -15,13 +15,13 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 	@Override
 	protected void configure(HttpSecurity httpSecurity) throws Exception {
 		httpSecurity.authorizeHttpRequests()
-		.anyRequest()
-		.authenticated()
-		.and()
-		.httpBasic()
-		.and()
-		.sessionManagement()
-		.sessionCreationPolicy(SessionCreationPolicy.STATELESS);
+			.anyRequest()
+			.authenticated()
+			.and()
+			.httpBasic()
+			.and()
+			.sessionManagement()
+			.sessionCreationPolicy(SessionCreationPolicy.STATELESS);
 	}
 
 	@Bean 
